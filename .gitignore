@@ -1,0 +1,8 @@
+# Attach application archives to GitHub Releases instead of committing them.
+*.zip
+*.7z
+*.exe
+*.dll
+*.pdb
+*.obj
+*.lib
