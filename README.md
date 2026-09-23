@@ -3,15 +3,12 @@
 Thank you for checking out this build. This is the very first time SkullbonezCore
 has been made public. We appreciate you trying it and sharing your feedback.
 
-Public downloads and bug reports for SkullbonezCore, a deterministic rigid-body
-physics engine with a Windows DirectX 12 application.
-
-SkullbonezCore is under active development. Features, controls, and file formats
-may change. The engine source is maintained privately.
-
 Start with the [first-time user manual (PDF)](docs/SkullbonezCore-First-Time-User-Manual.pdf),
 or [read it online](docs/first-time-user-manual.md). It covers installation,
 camera movement, driving, editing, prediction, and the guided tutorial.
+
+SkullbonezCore is under active development. Features, controls, and file formats
+may change. The engine source is maintained privately.
 
 ## Downloads
 
