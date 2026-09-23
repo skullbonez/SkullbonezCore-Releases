@@ -1,117 +1,200 @@
 # SkullbonezCore
 First-time user manual
 
-Drive. Rewind. Build. Explore another future.
+Explore. Build a scene. Test what happens.
 
-A guided introduction to your physics playground.
+Windows release 2026.09.23.2
 
-Public release edition - 23 September 2026
+## Your first session
+<!-- section: GET STARTED -->
 
-## Start here
-Thank you for checking out SkullbonezCore's first public build. Download the Windows x64 ZIP from github.com/skullbonez/SkullbonezCore-Releases, extract the whole archive to a writable folder, and run Launch SkullbonezCore.cmd. Keep the data folder and DLLs beside the executable. Windows x64 and a compatible DirectX 12 GPU and driver are required; this build is unsigned.
+Thank you for trying the very first public release of SkullbonezCore. This guide helps you explore, build and test your own scenes.
 
-### First, look and move
-Start tutorial opens a camera lesson before you get into the car. Hold the right mouse button over the scene and move the mouse to look around. Keep right mouse held and press W, A, S or D to move. Complete both checklist items before continuing to the car.
+### 1. Extract, then launch
+Download the Windows ZIP from the [public release page](https://github.com/skullbonez/SkullbonezCore-Releases/releases). Extract the entire archive to a writable folder and run **Launch SkullbonezCore.cmd**. Keep the executable, DLLs and **SkullbonezData** together. You need 64-bit Windows and a DirectX 12-compatible GPU and driver. This build is unsigned; no development tools are needed.
 
-### Find your way
-The tutorial card shows your progress and offers Retry section, Skip step and Exit. The next editor button flashes yellow. Camera movement is slower during tutorial practice to make the scene easier to explore.
+### 2. Learn to look and move
+Choose **Start tutorial** on first launch, or click **Tutorial** in the top bar. The first lesson teaches the camera before you enter the car. Hold **right mouse** over the scene and move the mouse to look around. Keep it held and use **W/A/S/D** to move. Release right mouse to use panels and tools again.
 
-### Keep this guide nearby
-This manual is included in the ZIP and linked from the public repository README. The public repository also accepts bug reports. Include your release version, reproduction steps and what you expected to happen.
+### 3. Find the controls
+Press **Esc** to open the menu, then open **Editor** at the left edge. **Tools > Scene** loads levels; **Tools > Keys** shows controls and tutorial Resume/Restart. Hover for help and scroll inside panels. The top-right header shows Objects, then Scene/Frame on the next line.
 
-## Your first crash
-Click Tutorial in the top bar to start the crash course, or choose Start tutorial on first launch. Returning users can open Keys in Tools and choose Resume or Restart. The tutorial card follows your progress and offers Retry section, Skip step and Exit. The next editor button flashes yellow.
+### Start with these controls
+| Control | What it does |
+| --- | --- |
+| Right mouse + move mouse | Look around the viewport. In an orthographic view, pan instead. |
+| Right mouse + W/A/S/D | Move forward, left, backward and right. Q/E moves down/up. |
+| Shift / wheel while looking | Temporary speed boost / adjust flight speed. |
+| Middle-drag / idle wheel | Pan the camera / zoom. |
+| Double-click an object | Attach the camera. For a car, press T to enter Drive. |
+| W/A/S/D / Space in Drive | Accelerate, steer, reverse / brake. Esc detaches. |
+| Edit scene | Enter or leave editing; a filled button means it is active. |
+| 0 (zero) | Show or hide the UI. |
 
-### Get in and drive
-Double-click the car to attach the camera, then press T to drive. Esc detaches the camera. Hold W to accelerate, use A and D to steer, S to reverse and Space to brake. Drive into the blocks and watch the ragdolls fly.
+> **Good to know**
+> The tutorial covers driving, rewinding, editing, terrain and the Solar System. **Retry section** restores the current chapter; **Skip step** moves past a lesson. Practice scenes are protected: use **New scene** to make a level you can save.
 
-### Watch it backwards
-Press T to get out of the car. Move to the bottom edge to reveal the timeline. Drag its thumb left to watch your own crash run backwards. This views recorded history; it does not rewrite the live scene.
+## Build your first scene
+<!-- section: CREATE A SCENE -->
 
-### Try again
-If you miss the stack, click Retry section on the tutorial card to immediately restore the section's original level state. Click Continue when the tutorial offers the building chapter. It restores a clean, paused playground for editing.
+Example project: a box and a ball on flat terrain. No JSON editing is required.
 
-## Make the stack yours
-Press Esc to bring up the menu, then click Editor at the left edge to reveal its panel. In Objects, click Edit scene, then Select. Click the yellow top block. The chosen tool stays active until you choose another.
+### 1. Open the Editor
+Press **Esc** if you need the menu, open **Editor**, then choose **Objects**. Save any existing work before starting a new level.
 
-### Move, rotate and scale
-Click Move [W] and drag an arrow for one axis, or a square plane handle for two axes. Keep the block close to the stack so the projectile can still hit it.
+### 2. Create a new scene
+Click **New scene**. This opens a blank scene with editing enabled. Remember its name so you can find the level again in **Tools > Scene**.
 
-Click Rotate [E] and drag one of the rings. A small twist is enough. Click Scale [R] and drag the centre handle to resize uniformly. Axis handles resize representable shape axes; unavailable axes appear grey. Select [Q] returns to selection. These shortcuts apply when you are not holding right mouse to navigate.
+### 3. Find the placement controls
+Choose a type from the scrollable object list to enter placement automatically. **Edit scene** controls editing; **Select [Q]** returns to selecting existing objects.
 
-### Undo and redo
-Press Ctrl+Z or click Undo to restore the previous size, then press Ctrl+Y or click Redo to keep your change. Both keyboard shortcuts and buttons complete the tutorial steps. One completed drag is one history step. Escape during a drag cancels the edit and restores its starting transform without adding a history step.
+### 4. Place a box
+Choose **Box**. Turn **Static object** on for a fixed obstacle, or off for a body that can fall. Move onto terrain until the preview appears, then click and release left mouse to place it.
 
-### Set orientation and snapping
-Space: World uses fixed world axes. Click it to use Space: Local and follow the selected object's orientation. Move snap, Angle snap and Scale snap toggle independently; the adjacent value button chooses the increment. Settings stay fixed while a drag is active.
+### 5. Add a ball
+Choose **Ball** and turn **Static object** off. Move the preview near the box. Before placing, use the wheel to raise it above the terrain, then click and release. Page 3 explains sizing and rotation.
 
-## See a crash before it happens
-Click Edit scene again to leave editing. Reveal Replay on the left, click Predict, then click the purple ball. Wait for its future path and Causes to appear. The live scene remains paused.
+### 6. Save the scene
+Click **Save scene** in **Editor > Objects**. This writes the authored level under **SkullbonezData/scenes/**. Check the save feedback before changing scenes or closing the app. **F2** makes a separate scene shot; it does not save the active level.
 
-### Inspect a collision
-In Causes, click the first Manifold row under the yellow block. The contact manifold shows the points where the objects will touch. Click Exit inspect at the top of the Causes pane to return to Scene mode. Click the purple ball again to select its future.
+### 7. Run your experiment
+Click **Edit scene** to leave editing. If paused, click **Play** on the bottom transport. Watch the ball fall and collide. Save the starting arrangement before running if you want to return to it.
 
-### Make another future
-Click Modify velocity in Replay. Drag an arrow on the ball's velocity vector and release. Original stays available while Modified is calculated. Drag the timeline forwards and backwards to compare both paths.
+### 8. Reopen and try again
+Open **Tools > Scene**, use the scene dropdown's filter to find your level, and select it. Make another edit, save, and run again. A saved scene and a saved replay recording are different things (page 4).
 
-### Choose and launch
-Click Accept Original or Accept Modified. Either is a valid choice; acceptance does not launch the ball. Click Predict to turn it off, then click Play on the bottom transport. Watch the selected future play out against your edited stack.
+> **Good to know**
+> Creating a scene does not replace saving it. Use **Save scene** for your authored level. Tutorial practice scenes cannot be overwritten; create your own level to keep changes.
 
-## Build a new landscape
-Click Continue to open the fresh landscape chapter. These edits begin paused. The left Editor panel provides Objects, Terrain and Material tabs.
+## Place, select, transform
+<!-- section: EDITOR WORKFLOW -->
 
-### Shape the ground
-Click Terrain. With Terrain brush enabled, hold left mouse on clear ground to raise a hill. Adjust Brush radius with its slider. Click Brush: Raise ground to change to Brush: Lower ground, then use left mouse to lower terrain. Right-drag moves the camera.
+The pointer acts on the viewport. A click over a panel operates that panel instead.
 
-### Add water and colour
-Use Water level or + 1 m to make a shoreline. Show water controls visibility. In Material, click the launcher block under the purple ball, then choose a colour. Choose Ground to colour the terrain. Rocket League grass is the turf surface; scene lighting is controlled separately.
+| Mode | Use it for |
+| --- | --- |
+| Choose a type in the object list | Preview and insert a new object. Placement enters Edit mode automatically. |
+| Select [Q] | Select an existing object, then choose Move, Rotate or Scale. A gizmo is the visible set of transform handles. |
 
-### Add some chaos
-Click Objects. Scroll to Tornado and click beside the stack to place it. Choose Bomb and place it on the other side. Leave the default delays for the tutorial. Scroll back to the top and click Edit scene to leave editing; click Play if paused. Wait for both effects to activate.
+### Placing objects
+| Gesture or control | Result |
+| --- | --- |
+| Left click and release | Place the current preview. Placement commits on release. |
+| Hold left mouse + drag | Resize before placing. Boxes use drag for footprint dimensions and wheel for height during the drag; round objects scale uniformly. |
+| Wheel before clicking | Raise or lower the preview above its terrain placement. |
+| Ctrl + wheel | Rotate the preview around the vertical axis in 15-degree steps. |
+| Static object / Terrain align | Choose fixed or dynamic physics / align placement to the terrain slope. |
 
-## Move around the viewport
-The first tutorial lesson teaches looking and moving. These additional navigation controls help you explore afterwards. Start a gesture over the scene, clear of panels and text fields.
+### Editing existing objects
+Click **Select [Q]**, then click an object. Keep **Modify velocity** off when editing its shape or position. Choose the tool using its button or the bracketed shortcut while right mouse is released.
 
-### Look and fly
-Hold right mouse and move the mouse to look around. While holding it, W/S moves forwards/backwards, A/D strafes, Q moves down and E moves up along world Y. The wheel adjusts flight speed; Shift gives a temporary speed boost. Releasing right mouse restores the selected tool.
+| Tool or gesture | Result |
+| --- | --- |
+| Move [W] | Drag an arrow along one axis, or a square handle in a plane. |
+| Rotate [E] | Drag a ring to rotate around its axis. |
+| Scale [R] | Drag the centre for uniform size, or an axis for supported shape dimensions. |
+| Space: World / Local | Choose fixed world axes or axes aligned to the object. |
+| Move / Angle / Scale snap | Toggle snapping and choose each increment with its value control. |
+| Esc during a drag | Cancel the edit and restore the starting transform. |
+| Delete / Ctrl+Z / Ctrl+Y | Delete / undo / redo. Ctrl+Shift+Z also redoes. |
 
-### Pan, orbit and zoom
-Middle-drag pans in the camera plane. Alt-left-drag orbits the current focus; Alt-right-drag dollies towards or away from it. Alt-middle also pans. In an orthographic view, right-drag pans instead of rotating. The idle wheel changes zoom.
+**Camera:** hold right mouse to look and use W/A/S/D to move. Release it to return to the selected tool. Middle-drag pans; Alt-left-drag orbits and Alt-right-drag dollies. **Frame selected [F]** fits the selection in view.
 
-### Frame and choose a tool
-Click Frame selected to fit the selected object. The optional idle viewport keys are Q Select, W Move, E Rotate, R Scale and F Frame selected. These mappings apply to editing and free inspection; vehicle, launcher and director modes keep their own controls.
+> **Good to know**
+> Use undo before leaving Edit mode; leaving it clears the edit history. Save your starting scene. A grey axis can mean the selected shape cannot represent that change.
 
-### Leave inspection
-Click Exit inspect on the causal pane, or press Escape. A popup dismisses first; an active transform cancels first. Exiting inspection returns camera ownership to Scene without launching the paused experiment.
+## Physics, prediction & replay
+<!-- section: TRY AN EXPERIMENT -->
 
-## Save, recover and keep exploring
-The tutorial uses bundled practice scenes that are protected from overwrite. To build your own saved level, click New scene in Editor > Objects, make your edits, then click Save scene. This updates that authored level through its normal save and backup handling. F2 exports a separate scene shot; it does not save the active level. Tutorial progress is separate from scene files.
+Start simple: save a scene, run it, inspect what happens, then reload your saved setup.
 
-### Resume or restart
-Resume reconstructs the current chapter's starting setup. It cannot recreate a previous session's temporary recording or calculated futures. Restart begins with looking and moving, before the car. Retry section restores the current chapter. Skip step marks a lesson as skipped; it is not the same as completing it.
+### Control the simulation
+Leave **Edit scene**, then use **Play/Pause** on the bottom transport. Single-step advances a paused simulation once. Physics controls provide body properties and diagnostic overlays: static bodies stay fixed; dynamic bodies can move or sleep at rest.
 
-### Load a level safely
-The level-authoring guide explains the accepted scene format and the shipped native validator. See docs/LLM-Level-Authoring-Prompt.md for the long-form prompt, examples, validation commands and the generate-check-fix loop. A successful format check does not prove that a structure is stable or a track is drivable.
+### 1. Predict and inspect
+Open **Replay** and click the bold **Predict** control, then click a body in the viewport. Wait for its future path and **Causes**. Click a cause to inspect a collision; **Exit inspect** or **Esc** leaves inspection without launching the paused experiment.
 
-### Lighting and materials
-Split Future lighting is the default across scenes. F7 switches to legacy lighting for comparison. Rocket League grass is a terrain material with no specular highlight. The authored Split Future scene retains its separate ground material.
+### 2. Compare a different future
+**Modify velocity** sits directly below Predict. With a predicted object selected, enable it, drag a velocity arrow and release. Compare **Original** and **Modified** by scrubbing the timeline. Choose **Accept Original** or **Accept Modified**, turn Predict off, then press **Play** to launch it.
 
-### More help
-Open Keys in Tools for controls outside the tutorial. Use visible controls whenever possible. For a stuck step, Retry section gives a known starting point without overwriting your saved scenes.
+### 3. Rewind or branch
+Move to the bottom edge to reveal the timeline and drag its thumb to view recorded history. **Branch from here [Enter]**, at the bottom of Replay below Load recording, resumes from the selected recorded point. Save a recording first if you want a separate copy of the earlier run.
 
-## Editor entry and status
-Click Edit scene to inspect and select existing objects. Choosing an object to place in Objects or Build automatically enters Edit mode with that object ready to place. Terrain align, Modify velocity and Angular velocity sit near the top of Objects.
+### Understand the different saves
+| Action | What you keep |
+| --- | --- |
+| Editor > Objects > Save scene | The editable authored level under SkullbonezData/scenes/. |
+| F2 | A separate numbered scene shot; it does not save the active level. |
+| F3 | A viewport screenshot. |
+| Replay > Save / Load recording | Recorded simulation data, separate from the editable scene. High detail prediction is just above Save recording. |
 
-The right side of the top bar shows Objects on the first line, then Scene and Frame on the second. Solver Lab in Tools > Scene can open separately supplied comparisons. The compact public ZIP omits the large built-in comparison bundles.
+> **Good to know**
+> Reset rebuilds the scene; **Reset Defaults** reloads authored defaults and discards live edits. Save anything you want to keep before resetting or loading another level.
 
-## Replay controls and the final lesson
-Predict is the bold first control in Replay. Modify velocity is directly below it. Select a predicted object to work with its velocity, then compare Original and Modified before accepting one.
+### Explore further
+The tutorial finale loads **solar_system.scene.json** from Tools > Scene. Set **Prediction horizon** to at least **40s**, select **Earth**, click **Predict**, wait for its lines, then press **Play**. The tutorial leaves that scene running.
 
-### Recording controls
-High detail prediction sits above Save recording. Load recording follows Save recording; Branch from here [Enter] is the final control beneath Load recording. Branching resumes simulation from the selected recorded point. Save a recording if you want to keep a separate copy before exploring a different branch.
+**Solver Lab** opens separately supplied comparisons from Tools > Scene. The compact public ZIP omits the large built-in recordings. In Solver Lab, Space plays/pauses and left/right arrows step.
 
-### Explore the Solar System
-The final tutorial chapter opens Tools > Scene. Search for the Solar System, load it, increase the prediction horizon to at least 40 seconds, then press Play. Finishing the tutorial leaves the Solar System running. The earlier practice scenes use a 20-second playback limit.
+## Keyboard & mouse
+<!-- section: QUICK REFERENCE -->
 
-### Water appearance
-Demo water is the default appearance. Reflection perturbation is disabled in this release. Terrain editing and water-level controls still let you build a shoreline.
+Shortcuts are context-sensitive. Finish typing in a filter or close a popup before using world controls. Tool shortcuts apply with right mouse released; vehicle and launcher modes have their own controls.
+
+| Key / gesture | Action and context |
+| --- | --- |
+| Right mouse + move mouse | Viewport camera look; pan in an orthographic view. |
+| Right mouse + W/A/S/D; Q/E | Fly forward/left/back/right; down/up. |
+| Shift / wheel while looking | Temporary faster travel / adjust flight speed. |
+| Middle-drag / idle wheel | Pan / zoom. |
+| Alt-left / Alt-right / Alt-middle drag | Orbit / dolly / pan around the current focus. |
+| Q / W / E / R | Select / Move / Rotate / Scale in editing and free inspection. |
+| F | Frame the selection in editing and free inspection. |
+| Backtick (`) | Enter or leave Edit mode (US keyboard key below Esc). |
+| Double-click / Esc | Attach to an object / detach. Esc dismisses or cancels an active interaction first. |
+| T | Enter or leave Drive when attached to a car. |
+| W/A/S/D / Space in Drive | Accelerate, steer, reverse / brake. |
+| Ctrl+Z / Ctrl+Y or Ctrl+Shift+Z | Undo / redo an editor edit. |
+| Delete / Esc during a transform | Delete the editable selection / cancel the drag. |
+| Ctrl + wheel in placement | Rotate the preview by 15 degrees per wheel step. |
+| P | Toggle paused prediction inspection. Use visible Play to run afterwards. |
+| F1 / Enter when attached | Cycle attached-camera submode / toggle camera pin. |
+| Enter in replay | Branch from the selected recorded point when available. |
+| F2 / F3 | Save a separate scene shot / screenshot. |
+| 0 / F7 | Show/hide UI / switch Split Future and legacy lighting. |
+| N / M | Toggle launcher / cycle its fire mode while active. |
+| Space / left-right in Solver Lab | Play/pause / step backward-forward. |
+| F5 / F6 | Performance histogram / memory overlay. |
+| V / C / G / O | Collision visuals / physics overlays / broadphase bounds / terrain contact probe. |
+| [ / ] / 6 | Previous/next physics pipeline stage / transparent debug display. |
+| 1 / 2 / 3; 4 / 5 | Freeze water / reflection mode / flat water; show/hide terrain / water. |
+
+These are the main first-session controls, not every developer shortcut. **Tools > Keys**, hover help and the active mode provide more context. Use the visible **Reset** button: **R** is Scale in the usual editor view.
+
+## When something feels stuck
+<!-- section: HELP & NEXT STEPS -->
+
+Most first-session surprises come from an active mode, a paused scene, or a pointer over a panel.
+
+| What you see | What to check |
+| --- | --- |
+| Objects will not move | Leave Edit scene, turn Predict off and press Play. Check the body is dynamic rather than Static. |
+| Clicks keep adding objects | Choose Select [Q] before selecting an existing object. |
+| The cursor disappears | Release right mouse. A placement preview can replace the normal cursor over the world. |
+| No placement preview | Choose an object type and move over terrain inside the viewport, clear of panels. |
+| Shortcuts do nothing | Finish editing the text field or close the popup. Check the mode and release right mouse for tool shortcuts. |
+| Controls are missing | Scroll inside the panel, open its dock or enlarge the window. Press 0 if the UI is hidden. |
+| My scene is missing after restart | New scene alone does not save it. Use Editor > Objects > Save scene and check the save feedback. |
+| Files do not save or assets are missing | Extract the whole ZIP to a writable folder and use Launch SkullbonezCore.cmd. Do not run from inside the ZIP. |
+| A tutorial step is stuck | Use Retry section for a fresh chapter setup. Resume restores a chapter, not a previous session's temporary recording. |
+
+### Terrain and water
+In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse** to paint. Use **Brush: Raise ground / Lower ground** to choose the direction and **Brush radius** to set its size. Right-drag moves the camera. Use **Water level** and **Show water** to make a shoreline. Save your authored scene afterwards.
+
+### A useful first practice session
+Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
+
+### About this guide
+A practical guide to **SkullbonezCore 2026.09.23.2**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+
+[Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.
