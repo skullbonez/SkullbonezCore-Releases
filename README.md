@@ -12,13 +12,13 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**A new release is being prepared. No downloads have been published here yet.**
+**The first public release is available: [SkullbonezCore 2026.09.23.2](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.23.2).**
 
-Builds and release notes will appear on the
+Download the **Windows x64 ZIP (103.5 MB)** and updated PDF manual from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
-Once a release is available:
+To get started:
 
 1. Open its release notes and download the Windows x64 ZIP under **Assets**.
 2. Extract the entire archive to a writable folder.
