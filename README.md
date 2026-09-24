@@ -12,17 +12,20 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**The first public release is available: [SkullbonezCore 2026.09.23.2](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.23.2).**
+**Latest release: [SkullbonezCore 2026.09.24.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.24.1).**
 
-Download the **Windows x64 ZIP (103.5 MB)** and updated PDF manual from the
+Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
+The ZIP includes the PDF manual and release notes. Read the
+[new camera-mode instructions](docs/releases/2026.09.24.1.md#using-the-new-camera-mode)
+for Camera A/B placement and Director transitions.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:
 
 1. Open its release notes and download the Windows x64 ZIP under **Assets**.
 2. Extract the entire archive to a writable folder.
-3. Run `Launch SkullbonezCore.cmd` and keep the data folder and DLLs beside the executable.
+3. Run `SKULLBONEZ_CORE.exe` and keep the data folder and DLLs beside the executable.
 
 The application requires Windows x64 and a compatible DirectX 12 GPU and driver.
 Check each release's notes for additional requirements, known issues, and signing
