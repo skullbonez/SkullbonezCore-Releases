@@ -12,13 +12,13 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.09.24.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.24.1).**
+**Latest release: [SkullbonezCore 2026.09.25](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.25).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[new camera-mode instructions](docs/releases/2026.09.24.1.md#using-the-new-camera-mode)
-for Camera A/B placement and Director transitions.
+[new Director instructions](docs/releases/2026.09.25.md#set-up-the-new-director-camera)
+for the single-camera spline path. **Camera A/B controls have been replaced.**
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:

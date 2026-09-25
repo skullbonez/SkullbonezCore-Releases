@@ -3,7 +3,7 @@ First-time user manual
 
 Explore. Build a scene. Test what happens.
 
-Windows release 2026.09.23.2
+Windows release 2026.09.25
 
 ## Your first session
 <!-- section: GET STARTED -->
@@ -40,13 +40,13 @@ Press **Esc** to open the menu, then open **Editor** at the left edge. **Tools >
 Example project: a box and a ball on flat terrain. No JSON editing is required.
 
 ### 1. Open the Editor
-Press **Esc** if you need the menu, open **Editor**, then choose **Objects**. Save any existing work before starting a new level.
+Press **Esc** if you need the menu, open **Editor**, then choose **Controls**. Save any existing work before starting a new level.
 
 ### 2. Create a new scene
 Click **New scene**. This opens a blank scene with editing enabled. Remember its name so you can find the level again in **Tools > Scene**.
 
 ### 3. Find the placement controls
-Choose a type from the scrollable object list to enter placement automatically. **Edit scene** controls editing; **Select [Q]** returns to selecting existing objects.
+Open **Objects** and choose a type from the scrollable object list to enter placement automatically. **Edit scene** controls editing; **Select [Q]** returns to selecting existing objects.
 
 ### 4. Place a box
 Choose **Box**. Turn **Static object** on for a fixed obstacle, or off for a body that can fall. Move onto terrain until the preview appears, then click and release left mouse to place it.
@@ -55,7 +55,7 @@ Choose **Box**. Turn **Static object** on for a fixed obstacle, or off for a bod
 Choose **Ball** and turn **Static object** off. Move the preview near the box. Before placing, use the wheel to raise it above the terrain, then click and release. Page 3 explains sizing and rotation.
 
 ### 6. Save the scene
-Click **Save scene** in **Editor > Objects**. This writes the authored level under **SkullbonezData/scenes/**. Check the save feedback before changing scenes or closing the app. **F2** makes a separate scene shot; it does not save the active level.
+Click **Save scene** in **Editor > Controls**. This writes the authored level under **SkullbonezData/scenes/**. Check the save feedback before changing scenes or closing the app. **F2** makes a separate scene shot; it does not save the active level.
 
 ### 7. Run your experiment
 Click **Edit scene** to leave editing. If paused, click **Play** on the bottom transport. Watch the ball fall and collide. Save the starting arrangement before running if you want to return to it.
@@ -65,6 +65,12 @@ Open **Tools > Scene**, use the scene dropdown's filter to find your level, and 
 
 > **Good to know**
 > Creating a scene does not replace saving it. Use **Save scene** for your authored level. Tutorial practice scenes cannot be overwritten; create your own level to keep changes.
+
+### Minecraft mouse controls
+Enable **Minecraft mode** in Controls. Click the viewport once to capture the mouse, then **left-click to place** or **right-click to remove**. **Esc** releases the cursor.
+
+### Ragdoll colliders
+Open **Physics > Visualisation > Ragdoll colliders**: **Off**, **Selected Ragdolls**, or **All Ragdolls**. Select any part to see its whole ragdoll. New heads use sphere colliders; older saved box heads retain their physics.
 
 ## Place, select, transform
 <!-- section: EDITOR WORKFLOW -->
@@ -123,7 +129,7 @@ Move to the bottom edge to reveal the timeline and drag its thumb to view record
 ### Understand the different saves
 | Action | What you keep |
 | --- | --- |
-| Editor > Objects > Save scene | The editable authored level under SkullbonezData/scenes/. |
+| Editor > Controls > Save scene | The editable authored level under SkullbonezData/scenes/. |
 | F2 | A separate numbered scene shot; it does not save the active level. |
 | F3 | A viewport screenshot. |
 | Replay > Save / Load recording | Recorded simulation data, separate from the editable scene. High detail prediction is just above Save recording. |
@@ -131,10 +137,14 @@ Move to the bottom edge to reveal the timeline and drag its thumb to view record
 > **Good to know**
 > Reset rebuilds the scene; **Reset Defaults** reloads authored defaults and discards live edits. Save anything you want to keep before resetting or loading another level.
 
-### Explore further
-The tutorial finale loads **solar_system.scene.json** from Tools > Scene. Set **Prediction horizon** to at least **40s**, select **Earth**, click **Predict**, wait for its lines, then press **Play**. The tutorial leaves that scene running.
+### Director camera: controls changed
+Camera A/B placement has been replaced by one camera path. Enable **Edit scene**, then open **Camera** beside **Replay**. Move with right mouse and W/A/S/D; release right mouse and **Capture view** at two or more positions. Choose **Curve**, easing and **Faster / Slower**, then **Play path**. Easing and duration apply to the whole path. **Space** pauses/resumes; **B** temporarily grabs the view. **Save path / Load path** use a separate `.shot.json` file. The Camera tab hides outside Edit mode.
 
-**Solver Lab** opens separately supplied comparisons from Tools > Scene. The compact public ZIP omits the large built-in recordings. In Solver Lab, Space plays/pauses and left/right arrows step.
+
+### Explore further
+For a space experiment, load **solar_system.scene.json**, set **Prediction horizon** to **40s**, select **Earth**, **Predict**, then **Play**.
+
+**Solver Lab** requires separately supplied comparisons; the portable ZIP omits them. Space plays/pauses; left/right arrows step.
 
 ## Keyboard & mouse
 <!-- section: QUICK REFERENCE -->
@@ -184,7 +194,7 @@ Most first-session surprises come from an active mode, a paused scene, or a poin
 | No placement preview | Choose an object type and move over terrain inside the viewport, clear of panels. |
 | Shortcuts do nothing | Finish editing the text field or close the popup. Check the mode and release right mouse for tool shortcuts. |
 | Controls are missing | Scroll inside the panel, open its dock or enlarge the window. Press 0 if the UI is hidden. |
-| My scene is missing after restart | New scene alone does not save it. Use Editor > Objects > Save scene and check the save feedback. |
+| My scene is missing after restart | New scene alone does not save it. Use Editor > Controls > Save scene and check the save feedback. |
 | Files do not save or assets are missing | Extract the whole ZIP to a writable folder and use Launch SkullbonezCore.cmd. Do not run from inside the ZIP. |
 | A tutorial step is stuck | Use Retry section for a fresh chapter setup. Resume restores a chapter, not a previous session's temporary recording. |
 
@@ -195,6 +205,6 @@ In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse
 Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
 
 ### About this guide
-A practical guide to **SkullbonezCore 2026.09.23.2**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+A practical guide to **SkullbonezCore 2026.09.25**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
 
 [Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.
