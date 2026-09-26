@@ -12,13 +12,13 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.09.25.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.25.1).**
+**Latest release: [SkullbonezCore 2026.09.26](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.26).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[Minecraft number shortcuts and Director instructions](docs/releases/2026.09.25.1.md)
-for left-hand editing, wheel zoom, scene reset and the single-camera spline path. **Camera A/B controls have been replaced.**
+[new editing and playback instructions](docs/releases/2026.09.26.md)
+for grouped copy/paste, block conversion, remembered min-spec settings, dominoes, the red arch and the new Edit/Playback controls.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:
