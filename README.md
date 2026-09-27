@@ -12,21 +12,21 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.09.27](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.27).**
+**Latest release: [SkullbonezCore 2026.09.27.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.27.1).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[graphics, material, editing and playback instructions](docs/releases/2026.09.27.md)
-for the new logo and Options layout, saved graphics choices, material finishes,
-Jeep collisions, terrain undo, and the Camera/Replay dock.
+[saving and performance update notes](docs/releases/2026.09.27.1.md)
+for the new SAVE/SAVED button and Ctrl+S, demo/practice Save As, faster large
+block builds, and restored edge smoothing.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:
 
 1. Open its release notes and download the Windows x64 ZIP under **Assets**.
 2. Extract the entire archive to a writable folder.
-3. Run `SKULLBONEZ_CORE.exe` and keep the data folder and DLLs beside the executable.
+3. Run `SKULLBONEZ_CORE.exe` and keep SkullbonezData, ThirdPtySource and the DLLs beside the executable.
 
 The application requires Windows x64 and a compatible DirectX 12 GPU and driver.
 Check each release's notes for additional requirements, known issues, and signing

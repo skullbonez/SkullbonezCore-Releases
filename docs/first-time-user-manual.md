@@ -3,7 +3,7 @@ First-time user manual
 
 Explore. Build a scene. Test what happens.
 
-Windows release 2026.09.27
+Windows release 2026.09.27.1
 
 ## Your first session
 <!-- section: GET STARTED -->
@@ -11,7 +11,7 @@ Windows release 2026.09.27
 This guide helps you explore, build and test your own SkullbonezCore scenes.
 
 ### 1. Extract, then launch
-Download the Windows ZIP from the [public release page](https://github.com/skullbonez/SkullbonezCore-Releases/releases). Extract the entire archive to a writable folder and run **Launch SkullbonezCore.cmd**. Keep the executable, DLLs and **SkullbonezData** together. You need 64-bit Windows and a DirectX 12-compatible GPU and driver. This build is unsigned; no development tools are needed.
+Download the Windows ZIP from the [public release page](https://github.com/skullbonez/SkullbonezCore-Releases/releases). Extract the entire archive to a writable folder and run **Launch SkullbonezCore.cmd**. Keep the executable, DLLs, **SkullbonezData** and **ThirdPtySource** together. You need 64-bit Windows and a DirectX 12-compatible GPU and driver. This build is unsigned; no development tools are needed.
 
 ### 2. Learn to look and move
 Choose **Start tutorial** on first launch, or click the top-bar **Tutorial book**. The tutorial minus button collapses it; plus or the book restores it. The first lesson teaches the camera. Hold **right mouse** over the scene and move the mouse to look around. Keep it held and use **W/A/S/D** to move. Release right mouse to use panels and tools again.
@@ -32,7 +32,7 @@ Open **Options** at the bottom: scene tools are on the left, diagnostics on the 
 | 0 (zero) | Show or hide the UI. |
 
 > **Good to know**
-> The tutorial covers driving, rewinding, editing, terrain and the Solar System. **Retry section** restores the current chapter; **Skip step** moves past a lesson. Practice scenes are protected: use **New scene** to make a level you can save.
+> The tutorial covers driving, rewinding, editing, terrain and the Solar System. **Retry section** restores the current chapter; **Skip step** moves past a lesson. **SAVE** or **Ctrl+S** saves practice work as your own copy, leaving the original intact.
 
 ### Adjust the workspace and look
 Drag the grip between Editor and Replay/Camera to change their heights. **Options > Video** offers **Max / Medium / Min** presets and live FPS. Changes last this run unless you click **Save settings**. In **Editor > Material**, select an object and choose a **Finish**; adjust **Roughness** and **Reflectivity**. **Ctrl+Z** undoes a material change; **Save scene** keeps it.
@@ -58,7 +58,7 @@ Choose **Box**. Turn **Static object** on for a fixed obstacle, or off for a bod
 Choose **Ball** and turn **Static object** off. Move the preview near the box. Before placing, use the wheel to raise it above the terrain, then click and release. Page 3 explains sizing and rotation.
 
 ### 6. Save the scene
-Click **Save scene** in **Editor > Controls**. This writes the authored level under **SkullbonezData/scenes/**. Check the save feedback before changing scenes or closing the app. **F2** makes a separate scene shot; it does not save the active level.
+Click red **SAVE** beside **Edit mode / Playback**, or press **Ctrl+S**. Grey **SAVED** means no pending edits. **Editor > Controls > Save scene** does the same. Check the notice before closing. **F2** writes a separate scene shot.
 
 ### 7. Run your experiment
 Click **Play**, including from Edit mode. Press **6** to restore your edited starting arrangement and clear the timeline. Unsaved edits survive reset; reset does not save the scene.
@@ -67,7 +67,7 @@ Click **Play**, including from Edit mode. Press **6** to restore your edited sta
 Find saved levels in **Options > Scene**. Edit, save and run again. Scenes and replay recordings are separate saves (page 4).
 
 > **Good to know**
-> Creating a scene does not replace saving it. Use **Save scene** for your authored level. Tutorial practice scenes cannot be overwritten; create your own level to keep changes.
+> **SAVE** writes under **SkullbonezData/scenes/**. Demo and practice saves create and open a copy; later saves update it. Loading the copy restarts undo and replay.
 
 ### Minecraft mouse controls
 Enable **Minecraft mode** in Controls. Click the viewport to capture the mouse; **left-click places**, **right-click removes**, **Esc releases**. **Wheel zooms**, **Ctrl-wheel rotates**, **Shift-wheel adjusts height**. **1 Move / 2 Rotate / 3 Scale** release the mouse for editing; **4 turns 90 degrees / 5 snaps to ground / 6 resets**. Keys 4/5 affect the preview or selected blocks. Choose an object in Objects to resume placing.
@@ -134,7 +134,7 @@ Drag the timeline thumb to inspect recorded history. Switch to **Edit** to retur
 ### Understand the different saves
 | Action | What you keep |
 | --- | --- |
-| Editor > Controls > Save scene | The editable authored level under SkullbonezData/scenes/. |
+| SAVE / Ctrl+S / Save scene | Saves the level; demo and practice become a new copy. |
 | F2 | A separate numbered scene shot; it does not save the active level. |
 | F3 | A viewport screenshot. |
 | Replay > Save / Load recording | Recorded simulation data, separate from the editable scene. High detail prediction is just above Save recording. |
@@ -176,7 +176,7 @@ Finish typing or close popups before using shortcuts. Release right mouse for to
 | P | Toggle paused prediction inspection. Use visible Play to run afterwards. |
 | F1 / Enter when attached | Cycle attached-camera submode / toggle camera pin. |
 | Enter in replay | Branch from the selected recorded point when available. |
-| F2 / F3 | Save a separate scene shot / screenshot. |
+| Ctrl+S; F2 / F3 | Save level; separate scene shot / screenshot. |
 | 0 / F7 | Show/hide UI / switch Split Future and legacy lighting. |
 | N / M | Toggle launcher / cycle its fire mode while active. |
 | Space / left-right in Solver Lab | Play/pause / step backward-forward. |
@@ -200,7 +200,7 @@ Most first-session surprises come from an active mode, a paused scene, or a poin
 | No placement preview | Choose an object type and move over terrain inside the viewport, clear of panels. |
 | Shortcuts do nothing | Finish editing the text field or close the popup. Check the mode and release right mouse for tool shortcuts. |
 | Controls are missing | Scroll inside panels or open their docks. Collapse the tutorial with its minus button. Press 0 if the UI is hidden. |
-| My scene is missing after restart | New scene alone does not save it. Use Editor > Controls > Save scene and check the save feedback. |
+| My scene is missing after restart | New scene alone does not save it. Use SAVE or Ctrl+S and check the save notice. |
 | Files do not save or assets are missing | Extract the whole ZIP to a writable folder and use Launch SkullbonezCore.cmd. Do not run from inside the ZIP. |
 | A tutorial step is stuck | Use Retry section for a fresh chapter setup. Resume restores a chapter, not a previous session's temporary recording. |
 
@@ -211,6 +211,6 @@ In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse
 Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
 
 ### About this guide
-A practical guide to **SkullbonezCore 2026.09.27**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+A practical guide to **SkullbonezCore 2026.09.27.1**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
 
 [Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.
