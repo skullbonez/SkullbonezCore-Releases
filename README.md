@@ -1,7 +1,7 @@
 # SkullbonezCore Releases
 
-Thank you for checking out this build. This is the very first time SkullbonezCore
-has been made public. We appreciate you trying it and sharing your feedback.
+Thank you for checking out this build. We appreciate you trying
+SkullbonezCore and sharing your feedback.
 
 Start with the [first-time user manual (PDF)](docs/SkullbonezCore-First-Time-User-Manual.pdf),
 or [read it online](docs/first-time-user-manual.md). It covers installation,
@@ -12,13 +12,14 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.09.26](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.26).**
+**Latest release: [SkullbonezCore 2026.09.27](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.27).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[new editing and playback instructions](docs/releases/2026.09.26.md)
-for grouped copy/paste, block conversion, remembered min-spec settings, dominoes, the red arch and the new Edit/Playback controls.
+[graphics, material, editing and playback instructions](docs/releases/2026.09.27.md)
+for the new logo and Options layout, saved graphics choices, material finishes,
+Jeep collisions, terrain undo, and the Camera/Replay dock.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:

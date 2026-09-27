@@ -3,7 +3,7 @@ First-time user manual
 
 Explore. Build a scene. Test what happens.
 
-Windows release 2026.09.26
+Windows release 2026.09.27
 
 ## Your first session
 <!-- section: GET STARTED -->
@@ -14,10 +14,10 @@ This guide helps you explore, build and test your own SkullbonezCore scenes.
 Download the Windows ZIP from the [public release page](https://github.com/skullbonez/SkullbonezCore-Releases/releases). Extract the entire archive to a writable folder and run **Launch SkullbonezCore.cmd**. Keep the executable, DLLs and **SkullbonezData** together. You need 64-bit Windows and a DirectX 12-compatible GPU and driver. This build is unsigned; no development tools are needed.
 
 ### 2. Learn to look and move
-Choose **Start tutorial** on first launch, or click **Tutorial** in the top bar. Use the tutorial title-bar minus button to collapse it on a small screen; plus restores it. The first lesson teaches the camera. Hold **right mouse** over the scene and move the mouse to look around. Keep it held and use **W/A/S/D** to move. Release right mouse to use panels and tools again.
+Choose **Start tutorial** on first launch, or click the top-bar **Tutorial book**. The tutorial minus button collapses it; plus or the book restores it. The first lesson teaches the camera. Hold **right mouse** over the scene and move the mouse to look around. Keep it held and use **W/A/S/D** to move. Release right mouse to use panels and tools again.
 
 ### 3. Find the controls
-Press **Esc** to open the menu, then open **Editor** at the left edge. **Tools > Scene** loads levels; **Tools > Keys** shows controls and tutorial Resume/Restart. Hover for help and scroll inside panels. The top-right header shows Objects, then Scene/Frame on the next line.
+Open **Options** at the bottom: scene tools are on the left, diagnostics on the right. **Scene** loads levels; **Keys & Help** lists controls. **Video** on the right holds graphics settings. The header shows the level and **Edit mode / Playback**. Hover for help; scroll inside panels.
 
 ### Start with these controls
 | Control | What it does |
@@ -28,22 +28,25 @@ Press **Esc** to open the menu, then open **Editor** at the left edge. **Tools >
 | Middle-drag / idle wheel | Pan the camera / zoom. |
 | Double-click an object | Attach the camera. For a car, press T to enter Drive. |
 | W/A/S/D / Space in Drive | Accelerate, steer, reverse / brake. Esc detaches. |
-| Top-bar Edit / Playback | Red means editing; green means playback. Click to switch. Edit scene mirrors it. |
+| Top-bar Edit mode / Playback | Red means editing; green means playback. Click to switch. Edit scene mirrors it. |
 | 0 (zero) | Show or hide the UI. |
 
 > **Good to know**
 > The tutorial covers driving, rewinding, editing, terrain and the Solar System. **Retry section** restores the current chapter; **Skip step** moves past a lesson. Practice scenes are protected: use **New scene** to make a level you can save.
 
+### Adjust the workspace and look
+Drag the grip between Editor and Replay/Camera to change their heights. **Options > Video** offers **Max / Medium / Min** presets and live FPS. Changes last this run unless you click **Save settings**. In **Editor > Material**, select an object and choose a **Finish**; adjust **Roughness** and **Reflectivity**. **Ctrl+Z** undoes a material change; **Save scene** keeps it.
+
 ## Build your first scene
 <!-- section: CREATE A SCENE -->
 
-Example: a box and a ball on flat terrain. The Objects list also includes a narrow, marked **Domino** and a **Red arch** with an open doorway.
+Start with a box and ball on flat terrain. Objects also includes **Domino** and **Red arch**.
 
 ### 1. Open the Editor
-Open **Editor > Controls**. Save existing work before starting a new level.
+Click **Editor > Controls** to enter editing. Save existing work before starting a new level.
 
 ### 2. Create a new scene
-Click **New scene** for a blank editable scene. Its name appears in **Tools > Scene**.
+Click **New scene** for a blank editable scene. Its name appears in **Options > Scene**.
 
 ### 3. Find the placement controls
 Open **Objects** and choose a type from the scrollable object list to enter placement automatically. **Edit scene** controls editing; **Select [Q]** returns to selecting existing objects.
@@ -61,7 +64,7 @@ Click **Save scene** in **Editor > Controls**. This writes the authored level un
 Click **Play**, including from Edit mode. Press **6** to restore your edited starting arrangement and clear the timeline. Unsaved edits survive reset; reset does not save the scene.
 
 ### 8. Reopen and try again
-Find saved levels in **Tools > Scene**. Edit, save and run again. Scenes and replay recordings are separate saves (page 4).
+Find saved levels in **Options > Scene**. Edit, save and run again. Scenes and replay recordings are separate saves (page 4).
 
 > **Good to know**
 > Creating a scene does not replace saving it. Use **Save scene** for your authored level. Tutorial practice scenes cannot be overwritten; create your own level to keep changes.
@@ -140,7 +143,7 @@ Drag the timeline thumb to inspect recorded history. Switch to **Edit** to retur
 > **Reset [6]** restores the edited starting arrangement and clears the timeline. Unsaved editor changes survive reset. **Reset Defaults** reloads authored defaults; save before using it or changing scenes.
 
 ### Director camera
-In Edit mode, open **Camera** beside Replay. Move with right mouse and W/A/S/D; release right mouse and **Capture view** at two or more positions. Choose **Curve**, easing and **Faster / Slower**, then **Play path**. **Space** pauses/resumes; **B** grabs the view. **Save path / Load path** use a separate `.shot.json` file.
+In Edit mode, **Camera** replaces Replay in the lower dock. Move with right mouse and W/A/S/D; release it and **Capture view** at two or more positions. Choose **Curve**, easing and **Faster / Slower**, then **Play path**. **Space** pauses; hold **B** to grab the view. Backtick returns to Edit. **Save path / Load path** use a separate `.shot.json` file.
 
 
 ### Explore further
@@ -181,7 +184,7 @@ Finish typing or close popups before using shortcuts. Release right mouse for to
 | 1 / 2 / 3 in Minecraft | Move / Rotate / Scale; replaces the old box-size presets. |
 | 4 / 5 in Minecraft; 6 / Backspace | Turn 90 degrees / snap to ground; reset scene and clear timeline. |
 
-**Q/W/E/R** still select tools in Minecraft after **Esc** releases mouse-look; captured **WASD** moves the camera. More controls: **Tools > Keys** and hover help.
+**Q/W/E/R** still select tools in Minecraft after **Esc** releases mouse-look; captured **WASD** moves the camera. More controls: **Options > Keys & Help** and hover help.
 
 ## When something feels stuck
 <!-- section: HELP & NEXT STEPS -->
@@ -191,7 +194,7 @@ Most first-session surprises come from an active mode, a paused scene, or a poin
 | What you see | What to check |
 | --- | --- |
 | Objects will not move | Turn Predict off and press Play. Check the body is physical rather than static. |
-| A large scene runs slowly | Options has independent Min-spec graphics and Min-spec physics checkboxes. Both are remembered. Graphics disables anti-aliasing and costly effects; fewer physics iterations can make complex stacks less stable. |
+| A large scene runs slowly | Try Options > Video > Min, then Save settings to keep it. Physics > Simulation > Min-spec physics selects 60 Hz and four iterations; this remembered choice can make complex stacks less stable. |
 | Clicks keep adding objects | Choose Select [Q] before selecting an existing object. |
 | The cursor disappears | Release right mouse. A placement preview can replace the normal cursor over the world. |
 | No placement preview | Choose an object type and move over terrain inside the viewport, clear of panels. |
@@ -202,12 +205,12 @@ Most first-session surprises come from an active mode, a paused scene, or a poin
 | A tutorial step is stuck | Use Retry section for a fresh chapter setup. Resume restores a chapter, not a previous session's temporary recording. |
 
 ### Terrain and water
-In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse** to paint. Use **Brush: Raise ground / Lower ground** to choose the direction and **Brush radius** to set its size. Right-drag moves the camera. Use **Water level** and **Show water** to make a shoreline. Save your authored scene afterwards.
+In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse** to paint. Use **Brush: Raise ground / Lower ground** to choose the direction and **Brush radius** to set its size. Each brush drag supports **Ctrl+Z / Ctrl+Y** undo/redo. Right-drag moves the camera. Use **Water level** and **Show water** for a shoreline. **Save scene** keeps the terrain.
 
 ### A useful first practice session
 Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
 
 ### About this guide
-A practical guide to **SkullbonezCore 2026.09.26**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+A practical guide to **SkullbonezCore 2026.09.27**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
 
 [Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.
