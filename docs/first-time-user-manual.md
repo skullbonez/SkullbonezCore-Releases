@@ -3,7 +3,7 @@ First-time user manual
 
 Explore. Build a scene. Test what happens.
 
-Windows release 2026.09.27.1
+Windows release 2026.09.29
 
 ## Your first session
 <!-- section: GET STARTED -->
@@ -40,13 +40,13 @@ Drag the grip between Editor and Replay/Camera to change their heights. **Option
 ## Build your first scene
 <!-- section: CREATE A SCENE -->
 
-Start with a box and ball on flat terrain. Objects also includes **Domino** and **Red arch**.
+Start with a box and ball on flat terrain.
 
 ### 1. Open the Editor
-Click **Editor > Controls** to enter editing. Save existing work before starting a new level.
+Click **Editor > Controls** to enter editing. **Play** leaves Edit mode automatically.
 
 ### 2. Create a new scene
-Click **New scene** for a blank editable scene. Its name appears in **Options > Scene**.
+Click **New scene**. Outside Tutorial, unsaved work prompts **Save / Discard / Cancel**, also on scene load or window close. Failed saves keep your scene open.
 
 ### 3. Find the placement controls
 Open **Objects** and choose a type from the scrollable object list to enter placement automatically. **Edit scene** controls editing; **Select [Q]** returns to selecting existing objects.
@@ -58,7 +58,7 @@ Choose **Box**. Turn **Static object** on for a fixed obstacle, or off for a bod
 Choose **Ball** and turn **Static object** off. Move the preview near the box. Before placing, use the wheel to raise it above the terrain, then click and release. Page 3 explains sizing and rotation.
 
 ### 6. Save the scene
-Click red **SAVE** beside **Edit mode / Playback**, or press **Ctrl+S**. Grey **SAVED** means no pending edits. **Editor > Controls > Save scene** does the same. Check the notice before closing. **F2** writes a separate scene shot.
+Click red **SAVE** or press **Ctrl+S**. Grey **SAVED** means no pending edits. **Controls > Save scene** does the same. Check the notice. **F2** writes a separate scene shot.
 
 ### 7. Run your experiment
 Click **Play**, including from Edit mode. Press **6** to restore your edited starting arrangement and clear the timeline. Unsaved edits survive reset; reset does not save the scene.
@@ -67,13 +67,13 @@ Click **Play**, including from Edit mode. Press **6** to restore your edited sta
 Find saved levels in **Options > Scene**. Edit, save and run again. Scenes and replay recordings are separate saves (page 4).
 
 > **Good to know**
-> **SAVE** writes under **SkullbonezData/scenes/**. Demo and practice saves create and open a copy; later saves update it. Loading the copy restarts undo and replay.
+> New levels and demo/practice copies save under **Documents/SkullbonezCore/Levels**. Existing levels keep their paths. Find both in **Options > Scene**. Loading resets undo and replay.
 
 ### Minecraft mouse controls
-Enable **Minecraft mode** in Controls. Click the viewport to capture the mouse; **left-click places**, **right-click removes**, **Esc releases**. **Wheel zooms**, **Ctrl-wheel rotates**, **Shift-wheel adjusts height**. **1 Move / 2 Rotate / 3 Scale** release the mouse for editing; **4 turns 90 degrees / 5 snaps to ground / 6 resets**. Keys 4/5 affect the preview or selected blocks. Choose an object in Objects to resume placing.
+Enable **Minecraft mode** in Controls. Click the viewport to capture the mouse; **left-click places**, **right-click removes**, **Esc releases**. **Wheel zooms**, **Ctrl-wheel rotates**, **Shift-wheel adjusts height**. **W/S** travels level with the ground. **1 Move / 2 Rotate / 3 Scale** release the mouse; **4 turns 90 degrees / 5 snaps to ground / 6 resets**. Keys 4/5 affect the preview or selected blocks. Choose an object in Objects to resume placing.
 
 ### Ragdoll colliders
-Open **Physics > Visualisation > Ragdoll colliders**: **Off**, **Selected Ragdolls**, or **All Ragdolls**. Select any part to see its whole ragdoll. New heads use sphere colliders; older saved box heads retain their physics.
+Use **Physics > Visualisation > Ragdoll colliders** to show **Selected Ragdolls** or **All Ragdolls**. In Edit, select a part and **Delete** removes the ragdoll; **Ctrl+Z** restores it. New ragdolls float; saved masses stay unchanged.
 
 ## Place, select, transform
 <!-- section: EDITOR WORKFLOW -->
@@ -140,7 +140,7 @@ Drag the timeline thumb to inspect recorded history. Switch to **Edit** to retur
 | Replay > Save / Load recording | Recorded simulation data, separate from the editable scene. High detail prediction is just above Save recording. |
 
 > **Good to know**
-> **Reset [6]** restores the edited starting arrangement and clears the timeline. Unsaved editor changes survive reset. **Reset Defaults** reloads authored defaults; save before using it or changing scenes.
+> **Reset [6]** restores the edited starting arrangement and clears the timeline. Unsaved editor changes survive reset. **Reset Defaults** reloads authored defaults; outside Tutorial, the save dialog protects unsaved work.
 
 ### Director camera
 In Edit mode, **Camera** replaces Replay in the lower dock. Move with right mouse and W/A/S/D; release it and **Capture view** at two or more positions. Choose **Curve**, easing and **Faster / Slower**, then **Play path**. **Space** pauses; hold **B** to grab the view. Backtick returns to Edit. **Save path / Load path** use a separate `.shot.json` file.
@@ -149,7 +149,7 @@ In Edit mode, **Camera** replaces Replay in the lower dock. Move with right mous
 ### Explore further
 For a space experiment, load **solar_system.scene.json**, set **Prediction horizon** to **40s**, select **Earth**, **Predict**, then **Play**.
 
-**Solver Lab** requires separately supplied comparisons; the portable ZIP omits them. Space plays/pauses; left/right arrows step.
+**Physics > Simulation** lets you choose a solver; **Apply & restart** applies it. **Options > Scene > Solver Lab** compares the current scene: choose solvers under **Controls > Live solvers**, then **Start live lanes**. Pause, step, save or stop the lanes. Optional recordings are omitted from the ZIP.
 
 ## Keyboard & mouse
 <!-- section: QUICK REFERENCE -->
@@ -166,7 +166,7 @@ Finish typing or close popups before using shortcuts. Release right mouse for to
 | Q / W / E / R | Select / Move / Rotate / Scale in editing and free inspection. |
 | F | Frame the selection in editing and free inspection. |
 | Backtick (`) | Enter or leave Edit mode (US keyboard key below Esc). |
-| Double-click / Esc | Attach to an object / detach. Esc dismisses or cancels an active interaction first. |
+| Double-click / Esc | Attach to an object / detach. Esc cancels first; it never exits the app. |
 | T | Enter or leave Drive when attached to a car. |
 | W/A/S/D / Space in Drive | Accelerate, steer, reverse / brake. |
 | Ctrl+C / Ctrl+V | Copy / paste the selected standalone objects, including a multiple selection. |
@@ -184,7 +184,7 @@ Finish typing or close popups before using shortcuts. Release right mouse for to
 | 1 / 2 / 3 in Minecraft | Move / Rotate / Scale; replaces the old box-size presets. |
 | 4 / 5 in Minecraft; 6 / Backspace | Turn 90 degrees / snap to ground; reset scene and clear timeline. |
 
-**Q/W/E/R** still select tools in Minecraft after **Esc** releases mouse-look; captured **WASD** moves the camera. More controls: **Options > Keys & Help** and hover help.
+**Q/W/E/R** select tools after **Esc** releases Minecraft mouse-look. Arrows never load another scene. More controls: **Options > Keys & Help** and hover help.
 
 ## When something feels stuck
 <!-- section: HELP & NEXT STEPS -->
@@ -211,6 +211,6 @@ In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse
 Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
 
 ### About this guide
-A practical guide to **SkullbonezCore 2026.09.27.1**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+A practical guide to **SkullbonezCore 2026.09.29**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
 
 [Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.

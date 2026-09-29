@@ -12,14 +12,14 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.09.27.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.27.1).**
+**Latest major release: [SkullbonezCore 2026.09.29](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.09.29).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[saving and performance update notes](docs/releases/2026.09.27.1.md)
-for the new SAVE/SAVED button and Ctrl+S, demo/practice Save As, faster large
-block builds, and restored edge smoothing.
+[major release notes](docs/releases/2026.09.29.md)
+for unsaved-scene protection, eleven selectable physics solvers, live Solver Lab
+comparisons, floating ragdolls, and camera, grass and rendering improvements.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:
