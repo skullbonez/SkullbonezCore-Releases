@@ -3,7 +3,7 @@ First-time user manual
 
 Explore. Build a scene. Test what happens.
 
-Windows release 2026.09.29
+Windows release 2026.10.05.1
 
 ## Your first session
 <!-- section: GET STARTED -->
@@ -143,13 +143,13 @@ Drag the timeline thumb to inspect recorded history. Switch to **Edit** to retur
 > **Reset [6]** restores the edited starting arrangement and clears the timeline. Unsaved editor changes survive reset. **Reset Defaults** reloads authored defaults; outside Tutorial, the save dialog protects unsaved work.
 
 ### Director camera
-In Edit mode, **Camera** replaces Replay in the lower dock. Move with right mouse and W/A/S/D; release it and **Capture view** at two or more positions. Choose **Curve**, easing and **Faster / Slower**, then **Play path**. **Space** pauses; hold **B** to grab the view. Backtick returns to Edit. **Save path / Load path** use a separate `.shot.json` file.
+In Edit, **Camera** replaces Replay. Capture two or more views, choose curve, easing and duration, then **Play path**. **Space** pauses, **B** grabs the view and Backtick returns to Edit. **Save / Load path** use a separate `.shot.json` file.
+
+Scene-timed views can follow a body. **Insert** adds one now; **U** follows the selection; **T** anchors its time. **End** plays to the next view and holds; **Home** rewinds; **J** stores a reframed view; **Delete** removes it; **L** saves.
 
 
 ### Explore further
-For a space experiment, load **solar_system.scene.json**, set **Prediction horizon** to **40s**, select **Earth**, **Predict**, then **Play**.
-
-**Physics > Simulation** lets you choose a solver; **Apply & restart** applies it. **Options > Scene > Solver Lab** compares the current scene: choose solvers under **Controls > Live solvers**, then **Start live lanes**. Pause, step, save or stop the lanes. Optional recordings are omitted from the ZIP.
+Try **solar_system.scene.json**: set **Prediction horizon** to **40s**, select Earth, **Predict**, then **Play**. Choose a solver under **Physics > Simulation**, then **Apply & restart**. **Options > Scene > Solver Lab** compares live lanes selected under **Controls > Live solvers**; optional recordings are omitted from the ZIP.
 
 ## Keyboard & mouse
 <!-- section: QUICK REFERENCE -->
@@ -163,11 +163,11 @@ Finish typing or close popups before using shortcuts. Release right mouse for to
 | Shift / wheel while looking | Temporary faster travel / adjust flight speed. |
 | Middle-drag / idle wheel | Pan / zoom. |
 | Alt-left / Alt-right / Alt-middle drag | Orbit / dolly / pan around the current focus. |
-| Q / W / E / R | Select / Move / Rotate / Scale in editing and free inspection. |
-| F | Frame the selection in editing and free inspection. |
+| Q / W / E / R; F | Select / Move / Rotate / Scale; frame the selection. |
 | Backtick (`) | Enter or leave Edit mode (US keyboard key below Esc). |
-| Double-click / Esc | Attach to an object / detach. Esc cancels first; it never exits the app. |
+| Double-click / Esc | Attach / detach. Esc cancels an active tool first. |
 | T | Enter or leave Drive when attached to a car. |
+| Home / End; Insert / Delete / T / U / J | Director: previous/next; add/remove; anchor/attach/store the viewpoint. |
 | W/A/S/D / Space in Drive | Accelerate, steer, reverse / brake. |
 | Ctrl+C / Ctrl+V | Copy / paste the selected standalone objects, including a multiple selection. |
 | Ctrl+Z / Ctrl+Y or Ctrl+Shift+Z | Undo / redo an editor edit. |
@@ -177,7 +177,7 @@ Finish typing or close popups before using shortcuts. Release right mouse for to
 | F1 / Enter when attached | Cycle attached-camera submode / toggle camera pin. |
 | Enter in replay | Branch from the selected recorded point when available. |
 | Ctrl+S; F2 / F3 | Save level; separate scene shot / screenshot. |
-| 0 / F7 | Show/hide UI / switch Split Future and legacy lighting. |
+| 0 | Show/hide UI. |
 | N / M | Toggle launcher / cycle its fire mode while active. |
 | Space / left-right in Solver Lab | Play/pause / step backward-forward. |
 | V / C / G / O | Collision visuals / physics overlays / broadphase bounds / terrain contact probe. |
@@ -211,6 +211,6 @@ In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse
 Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
 
 ### About this guide
-A practical guide to **SkullbonezCore 2026.09.29**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+A practical guide to **SkullbonezCore 2026.10.05.1**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
 
 [Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.

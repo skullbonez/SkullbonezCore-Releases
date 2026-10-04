@@ -12,14 +12,14 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.10.03](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.10.03).**
+**Latest release: [SkullbonezCore 2026.10.05.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.10.05.1).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[release notes](docs/releases/2026.10.03.md)
-for Director slow motion, optional Box3D and pile stabilization, sleep-plane and
-replay fixes, adaptive CPU scheduling, and editor improvements.
+[release notes](docs/releases/2026.10.05.1.md)
+for water swell and shoreline foam, scene-timed Director viewpoints, the second
+solver preview, Box3D scheduling and sleep, plus replay and editor fixes.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:
