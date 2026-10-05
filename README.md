@@ -12,14 +12,14 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.10.05.1](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.10.05.1).**
+**Latest release: [SkullbonezCore 2026.10.05.2](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.10.05.2).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[release notes](docs/releases/2026.10.05.1.md)
-for water swell and shoreline foam, scene-timed Director viewpoints, the second
-solver preview, Box3D scheduling and sleep, plus replay and editor fixes.
+[release notes](docs/releases/2026.10.05.2.md)
+for the biplane airport, Rube Goldberg chase, GPU grass deformation, steep-slope
+grass, Advanced water and Shore wave fade controls.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
 
 To get started:

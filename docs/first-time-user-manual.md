@@ -3,7 +3,7 @@ First-time user manual
 
 Explore. Build a scene. Test what happens.
 
-Windows release 2026.10.05.1
+Windows release 2026.10.05.2
 
 ## Your first session
 <!-- section: GET STARTED -->
@@ -149,7 +149,7 @@ Scene-timed views can follow a body. **Insert** adds one now; **U** follows the 
 
 
 ### Explore further
-Try **solar_system.scene.json**: set **Prediction horizon** to **40s**, select Earth, **Predict**, then **Play**. Choose a solver under **Physics > Simulation**, then **Apply & restart**. **Options > Scene > Solver Lab** compares live lanes selected under **Controls > Live solvers**; optional recordings are omitted from the ZIP.
+Open **biplane_airport.scene.json** for its looping flight. To add one, use **Objects > Vehicles > Biplane**, turn the preview and click; its circuit follows the placement. Use two at most. Try **rube_goldberg_chase.scene.json** for a chain reaction, or predict Earth in **solar_system.scene.json** with a 40s horizon.
 
 ## Keyboard & mouse
 <!-- section: QUICK REFERENCE -->
@@ -211,6 +211,6 @@ In Edit mode, open **Terrain**, enable **Terrain brush**, then hold **left mouse
 Create a new scene, place one static box and one dynamic ball, save, leave editing and watch. Reload, move the ball higher, save again and use **Predict** to explore the result. Or follow **Tutorial** from its camera lesson through the Solar System finale.
 
 ### About this guide
-A practical guide to **SkullbonezCore 2026.10.05.1**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
+A practical guide to **SkullbonezCore 2026.10.05.2**, covering the editor, camera navigation, scene saving, Replay and tutorial controls a new user needs first.
 
 [Downloads and feedback](https://github.com/skullbonez/SkullbonezCore-Releases) - include your build version, what you did and what happened when reporting a problem. The online **LLM Level-Authoring Guide** is linked from the repository README.
