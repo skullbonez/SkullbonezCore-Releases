@@ -12,12 +12,12 @@ may change. The engine source is maintained privately.
 
 ## Downloads
 
-**Latest release: [SkullbonezCore 2026.10.06](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.10.06).**
+**Latest release: [SkullbonezCore 2026.10.08](https://github.com/skullbonez/SkullbonezCore-Releases/releases/tag/v2026.10.08).**
 
 Download the **Windows x64 ZIP** from the
 [Releases page](https://github.com/skullbonez/SkullbonezCore-Releases/releases).
 The ZIP includes the PDF manual and release notes. Read the
-[release notes](docs/releases/2026.10.06.md)
+[release notes](docs/releases/2026.10.08.md)
 for 73 new showcase scenes, timed catapults, GPU water and particle effects,
 curved worlds, stronger min-spec behavior and replay improvements.
 To receive release notifications on GitHub, choose **Watch > Custom > Releases**.
